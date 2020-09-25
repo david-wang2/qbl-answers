@@ -1,0 +1,29 @@
+1a. samtools faidx ref.fa
+    vim ref.fa.fai
+1b. fastqc frag180.1.fq
+    fastqc jump2k.1.fq jump2k.2.fq frag180.2.fq
+2a. jellyfish histo mer_counts.jf > reads.histo
+    vim reads.histo
+2b. jellyfish dump -c  mer_counts.jf > dump.dat
+    vim dump.dat
+    sort -t ' ' -k 2 -rn dump.dat > dump2.dat
+    vim dump2.dat
+3a. spades.py --pe1-1 frag180.1.fq --pe1-2 frag180.2.fq --mp1-1 jump2k.1.fq --mp1-2 jump2k.2.fq -o asm -t 4 -k 31
+    grep -c '>' contigs.fasta
+    vim contigs.fasta
+3b. samtools faidx contigs.fasta
+    vim contigs.fasta.fai
+3c. vim contigs.fasta.fai
+3d. vim contigs.fasta.fai
+4a. cp asm/contigs.fasta contigs.fasta
+    dnadiff ref.fa contigs.fasta
+    vim out.report
+4b. nucmer ref.fa contigs.fasta
+    show-coords out.delta > show-coords.dat
+    vim show-coords.dat
+4c. vim show-coords.dat
+5a. vim show-coords.dat
+5b. vim show-coords.dat
+5c. samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:13854-14565 > node3.dat
+    vim node3.dat
+5d. python ported_decoder.py -d --input node3.dat --rev_comp > real_message.dat

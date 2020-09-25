@@ -1,0 +1,50 @@
+Question 1:
+1a. How long is the reference genome? 233806
+1b. How many reads are provided and how long are they?
+	- frag180.1.fq: 35178 reads, 100 bp/read
+	- frag180.2.fq: 35178 reads, 100 bp/read
+	- jump2k.1.fq: 70355 reads, 50 bp/read
+	- jump2k.2.fq: 70355 reads, 50 bp/read
+1c. How much coverage do you expect to have?
+	- frag180.1.fq: 35178*100/233806 = 15x genome coverage
+	- frag180.2.fq: ''
+	- jump2k.1.fq: 70355*50/233806 = 15x genome coverage
+	- jump2k.1.fa: ''
+1d. See screenshots (*.png)
+
+Question 2:
+2a. 1091 kmers
+2b. See the text file
+2c. 233,468
+2d. It undershot because the coverage is not perfect. It's still really close.
+
+Question 3:
+3a. 4
+3b. 105831+47861+41352+39423 = 234467
+3c. 105831
+3d. 47861, NODE_2 + NODE_1 gives a sequence length of 153692 which exceeds half the total length of the reference sequence. Thus, NODE_2 is the N50 contig.
+
+Question 4: 
+4a. 100%
+4b. 105831
+4c. There's 1 insertion in the 3rd contig
+
+Question 5:
+5a. reference: 26789 assembly: 13853
+5b. 14565-13854 = 711
+5c. The DNA sequence of the insertion is as follows:
+>NODE_3_length_41352_cov_20.588756:13854-14565
+TAACGATTTACATCGGGAAAGCTTAATGCAATTCACGCAGATATTCAGCTTAGAAGGTAC
+GCAGCGGTGACGGGGTGCGGTCCATAATCTATGAAGCTATGAATTCGTACCTCAAGTAAT
+GTTTTCTTCGCTGCAGTTCAGAAGTGATAAAGGTATCCCGCTTAGCCTGGCATACTTTGT
+GCGTTCGTACCGCCCAGCATTAATGACTTGTGTAGGCAAGTAATGAACGACTCTTCTACG
+CCGCGCCTAACCTCCGCACATAATGGCAGCATGTGGTAGTTACATACGCACAGAAGTGGT
+TCGGTTTTAACTATAGTCAGATATGAATAAGCTGCGTGTGTCGTTGTGTCGGCGTGTCGT
+ACTTACCTCCTGACATAGGTGAATTTCAGCCTACTGTAAGTTTGGAGTCGCGCTCTTTTC
+TTATTATATTCTTTGGTATGTGTGTGATGGGTTCGGGCGTGTATTGATGTCTCTAAGGCT
+CATGTTAGTGTTTATTTGGTCAGTTATGACGGTGTTCCTGTCGTACGTGTTGGCTTAGCG
+GACTTGTAGACGGGATCAAGGTTGTCTGACCCTCCGGTCGACCGTGGGTCGGCCGTCCCG
+GCCAGAATACAAGCCGCTTAGACTTTCGAAAGAGGGTAAGTTACTACGCGCGAACGTTAT
+ACCTCGTTTCAGTATGCACTCCCTTAAGTCACTCAGAAAAGACTAAGGGGCT
+5d. The decoded message :  Congratulations to the 2020 CMDB @ JHU class!  Keep on looking for little green aliens...
+

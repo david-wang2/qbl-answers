@@ -1,0 +1,500 @@
+  140  cd qbb2020-answers
+  141  llllss
+  142  ls
+  143  vim qbb2020-answers
+  144  rm qbb2020-answers
+  145  ls
+  146  cd ..
+  147  ls
+  148  cd qbb2020-answers
+  149  ls
+  150  mkdir day1-hw
+  151  cd ..
+  152  ls
+  153   mv Downloads/SRR072893 qbb2020-answers/day1-hw
+  154  ls
+  155  ls qbb2020-answers
+  156   mv Downloads/SRR072893 qbb2020-answers/day1-hw
+  157   mv Downloads/SRR072893.sam qbb2020-answers/day1-hw
+  158  cd qbb2020-answers/day1-hw
+  159  ls
+  160  cd ..
+  161  mv day1-hw day1-evening
+  162  ls
+  163  cd day1-evening
+  164  ls
+  165  samtools
+  166  samtools view SRR072893.sam
+  167  samtools
+  168  samtools
+  169  conda deactivate
+  170  samtools
+  171  conda activate cmdb
+  172  ls
+  173  vim SRR072893.sam
+  174  samtools view SRR072893.sam
+  175  wget https://bx.bio.jhu.edu/track-hubs/cmdb/SRR072893.sam
+  176  ls
+  177  vim SRR072893.sam
+  178  ls
+  179  vim SRR072893.sam
+  180  head -n 1000 SRR072893.sam > debug.sam
+  181  vim debug.sam
+  182  man head
+  183  vim SRR072893.sam
+  184  vim debug.sam
+  185  python
+  186  python --version
+  187  ls
+  188  jupyter-notebook
+  189  ls
+  190  conda activate day33
+  191  conda activate day3
+  192  ls
+  193  cd qbb2020-answers
+  194  ls
+  195  mkdir day3-hw
+  196  ls
+  197  cd day3-hw
+  198  cd ..
+  199  cp ~/qbb2020/data/K4me3.bed day3-hw
+  200  cp ~/qbb2020/data/K9me3.bed day3-hw
+  201  cp ~/qbb2020/data/K27me3.bed day3-hw
+  202  cp ~/data/genomes/BDGP6.Ensembl.81.gtf day3-hw
+  203  cd day3
+  204  cd day3-hw
+  205  ls
+  206  wget https://bx.bio.jhu.edu/track-hubs/cmdb/SRR072893.bam
+  207  samtools index /Users/cmdb/qbb2020-answers/day3-hw/SRR072893.bam
+  208  ls
+  209  vim SRR072893.bam.bai
+  210  file SRR072893.bam
+  211  file SRR072893.bam.bai
+  212  ls -l > directory.txt
+  213  ls
+  214  git add directory.txt
+  215  ig
+  216  igv
+  217  conda install igv
+  218  igv
+  219  ls
+  220  head directory.txt
+  221  git add directory.txt
+  222  git commit directory.txt -m "ls output file"
+  223  git push
+  224  git pull
+  225  ggit push
+  226  git push
+  227  ls
+  228  cd ..
+  229  ls
+  230  igv
+  231  ls
+  232  cd day3-hw
+  233  ls
+  234  vim BDG.Ensembl.81.gtf
+  235  vim BDGP6.Ensembl.81.gtf 
+  236  man cut
+  237  cut -f 3 BDGP6.Ensembl.81.gtf 
+  238  man sort
+  239  man uniq
+  240  cut -f 3 BDGP6.Ensembl.81.gtf | uniqq
+  241  cut -f 3 BDGP6.Ensembl.81.gtf | uniq
+  242  cut -f 3 BDGP6.Ensembl.81.gtf > column3.txt
+  243  vim column3.txt
+  244  vim BDGP6.Ensembl.81.gtf 
+  245  vim column3.txt
+  246  vim BDGP6.Ensembl.81.gtf 
+  247  man cut
+  248  grep
+  249  man grep
+  250  man grep
+  251  grep -c column3.txt
+  252  vim column3.txt
+  253  grep -c gene column3.txt
+  254  man sort
+  255  man uniq
+  256  man uniq
+  257  uniq column3.txt
+  258  man uniq
+  259  uniq -cd column3.txt
+  260  uniq -c column3.txt
+  261  vim column3.txt
+  262  sort column3.txt
+  263  sort column3.txt
+  264  uniq column3.txt
+  265  man uniq
+  266  uniq -cu column3.txt
+  267  uniq -u column3.txt
+  268  man uniq
+  269  igv
+  270  ls
+  271  lsls
+  272  man cut
+  273  cut -f 3 BDGP6.Ensembl.81.gtf 
+  274  cut -f 3 BDGP6.Ensembl.81.gtf | uniq -u
+  275  man uniq
+  276  vim column3.txt
+  277  man sort
+  278  sort column3.txt > col3_sort.txt
+  279  vim col3_sort.txt
+  280  man sort
+  281  sort -m col3_sort.txt
+  282  :q
+  283  ls
+  284  vim col3_sort.txt
+  285  man cut
+  286  cut -f 3 BDGP6.Ensembl.81.gtf | uniq
+  287  ls
+  288  sort column3.txt
+  289  ls
+  290  vim col3_sort.txt
+  291  man sort
+  292  sort -m col3_sort.txt
+  293  uniq col3_sort.txt
+  294  man sort
+  295  man grep
+  296  man grep
+  297  ls
+  298  man uniq
+  299  uniq -c col3_sort.txt
+  300  uniq -c col3_sort.txt | grep -v # > features.txt
+  301  uniq -c col3_sort.txt | grep  # -v > features.txt
+  302  uniq -c col3_sort.txt | grep '#' -v > features.txt
+  303  vim features.txt
+  304  cut -f 3 BDGP6.Ensembl.81.gtf | sort | uniq -c | grep '#' -v 
+  305  vim K4me3.bed
+  306  vim K4me3.bed
+  307  cut -f 1 K4me3.bed | sort | uniq -c
+  308  cut -f 1 K4me3.bed | sort | uniq -c > K4.info
+  309  cut -f 1 K9me3.bed | sort | uniq -c > K9.info
+  310  cut -f 1 K27me3.bed | sort | uniq -c > K27.info
+  311  man head
+  312  grep K4me3.bed
+  313  vim K9.info
+  314  vim K27.info
+  315  vim K4.info
+  316  vim K4me3.bed
+  317  grep 2L K4me3.bed > test.dat
+  318  vim test.dat
+  319  vim test.dat
+  320  man sort
+  321  man sort
+  322  sort -k 2 -n test.dat > test_test.dat
+  323  vim test_test.dat
+  324  grep 2L K4me3.dat | sort -k 2 -n | head > first10.dat
+  325  grep 2L K4me3.dat | sort -k 2 -n | head > first10.dat
+  326  ls
+  327  grep 2L K4me3.bed | sort -k 2 -n | head > first10.dat
+  328  vim first10.dat
+  329  ls
+  330  cd ..
+  331  lss
+  332  ls
+  333  mkdir day4-lunch
+  334  ls
+  335  cp day3-hw/BDGP6.Ensembl.81.gtf day4-lunch
+  336  ls
+  337  cd day4-lunch
+  338  ls
+  339  grep 3R BDGP6.Ensembl.81.gtf > preprocessed.gtf
+  340  vim preprocessed.gtf 
+  341  grep protein_coding preprocessed.gtf > processed.gtf
+  342  vim processed.gtf
+  343  cd ..
+  344  ls
+  345  cd day5-morning
+  346  ls
+  347  ls
+  348  jupyter-notebook
+  349  ls
+  350  mv 01_regression-empty.ipynb.txt 01_regression-empty.ipynb
+  351  mv 01_regression.ipynb.txt 01_regression.ipynb
+  352  ls
+  353  jupyter-notebook
+  354  conda activate cmdb
+  355  jupyter-notebook
+  356  python
+  357  ls
+  358  cd ..
+  359  ls
+  360  cd ..
+  361  ls
+  362  cd Documents
+  363  ls
+  364  cd ..
+  365  ls
+  366  cd qbb2020-answers
+  367  ls
+  368  cd ..
+  369  ls
+  370  mkdir qbl
+  371  cd qbl
+  372  ls
+  373  cd ..
+  374  ls
+  375  cd Downloads
+  376  ls
+  377  mv asm.tgz ~/qbl
+  378  ls
+  379  cd ..
+  380  ls
+  381  cd qbl
+  382  ls
+  383  conda install jellyfish spades mummer
+  384  history
+  385  man history
+  386  ::q
+  387  qqqq
+  388  ls
+  389  conda -env
+  390  man conda
+  391  conda --help
+  392  conda info
+  393  conda --help
+  394  conda list
+  395  conda activate day3
+  396  conda list
+  397  conda activate cmdb
+  398  conda install samtools v1.1
+  399  conda install samtools
+  400  conda -list
+  401  conda list
+  402  conda activate day3
+  403  conda list
+  404  conda activate cmdb
+  405  ls
+  406  cd qbl
+  407  ls
+  408  samtools faidx
+  409  ls
+  410  samtools faidx asm.tgz -n
+  411  samtools faidx asm.tgz
+  412  tar zxvf asm.tgz
+  413  ls
+  414  cd asm
+  415  ls
+  416  cd ..
+  417  ls
+  418  cd asm
+  419  ls
+  420  ls
+  421  samtools faidx ref.fa
+  422  ls
+  423  vim ref.fai.fai
+  424  vim ref.fa.fai
+  425  vim ref.fa.fai
+  426  man fastqc
+  427  mman FastQCc
+  428  man FastQC
+  429  ls
+  430  FastQCc frag180.1.fq
+  431  FastQC -help
+  432  :q
+  433  ls
+  434  conda list
+  435  ls
+  436  fastqc frag180.1.fq
+  437  ls
+  438  vim frag180.1_fastqc.html
+  439  fastqc jump2k.1.fq jump2k.2.fq frag180.2.fq
+  440  jellyfish -help
+  441  jellfish histo -C 
+  442  jellyfish histo -help
+  443  man jellyfish 
+  444  man jellyfish
+  445  jellyfish histo -C -l 50
+  446  jellyfish -C histo -l 50
+  447  jellyfish histo -l 50
+  448  ls
+  449  jellyfish histo -l 50 frag180.1.fq
+  450  man jellyfish
+  451  jellyfish count -Cc frag180.1.fq
+  452  jellyfish count -C frag180.1.fq
+  453  jellyfish --help
+  454  man jellyfish
+  455  ls
+  456  unzip frag180.1_fastqc.zip
+  457  ls
+  458  cd frag180.1_fastqc
+  459  ls
+  460  vim fastqc.fo
+  461  cd ..
+  462  ls
+  463  jellyfish histo frag180.1.fq
+  464  man jellyfish
+  465  jellyfish count frag180.1.fq
+  466  jellyfish count <(frag180.1_fastqc.zip)
+  467  man jellyfish
+  468  jellyfish count -m 21 -C frag180.1.fq
+  469  man jellyfish
+  470  jellyfish count -m 21 -C -s 1000000 *.fq
+  471  ls
+  472  jellyfish histo mer_counts.jf > reads.histo
+  473  vim reads.histo
+  474  jellyfish dump mer_counts.jf | sort | head
+  475  man jellyfish
+  476  jellyfish dump mer_counts.jf
+  477  man sort
+  478  jellyfish dump mer_counts.jf | sort -k 2 | head
+  479  man head
+  480  jellyfish dump mer_counts.jf > dump.dat
+  481  vim dump.dat
+  482  vim sort
+  483  man sort
+  484  vim dump.dat
+  485  man sort
+  486  ls
+  487  sort dump.dat
+  488  :q
+  489  ls
+  490  vim dump.dat
+  491  sort -t '>' dump.dat > dump2.dat
+  492  vim dump2.dat
+  493  vim dump.dat
+  494  man sort
+  495  sort -t '>\n' -z dump.dat > dump2.dat
+  496  sort -t '>' -z dump.dat > dump2.dat
+  497  vim dump2.dat
+  498  vim dump2.dat
+  499  man sort
+  500  grep dump.dat -A 1 > dump2.dat
+  501  ls
+  502  cd qbl
+  503  ls
+  504  cd asm
+  505  ls
+  506  sort -d dump.dat > dump2.dat
+  507  vim dump2.dat
+  508  man sort
+  509  ls
+  510  vim dump2.dat
+  511  man jellyfish
+  512  jellyfish dump -t  mer_counts.jf > dump.dat
+  513  vim dumpd.at
+  514  vim dump.dat
+  515  jellyfish dump -c  mer_counts.jf > dump.dat
+  516  vim dump.dat
+  517  sort -t '\t' -k 2 dump.dat > dump2.dat
+  518  vim dump2.dat
+  519  vim sort
+  520  sort -t ' ' -k 2 dump.dat > dump2.dat
+  521  vim dump2.dat
+  522  sort -t ' ' -k 2 -r dump.dat > dump2.dat
+  523  vim dump2.dat
+  524  sort -t ' ' -k 2 -rn dump.dat > dump2.dat
+  525  vim dump2.dat
+  526  vim dump2.dat
+  527  man spades
+  528  Spades -help
+  529  conda list
+  530  spades.py --pe1-1 frag180.1.fq --pe1-2 frag180.2.fq --mp1-1 jump2k.1.fq --mp1-2 jump2k.2.fq -o asm -t 4 -k 31
+  531  ls
+  532  cd asm
+  533  ls
+  534  grep -c '>' contigs.fasta
+  535  vim contigs.fasta
+  536  samtools faidx contigs.fasta
+  537  ls
+  538  vim contigs.fasta.fai
+  539  cd ..
+  540  ls
+  541  cd asm
+  542  ls
+  543  cd ..
+  544  ls
+  545  dnadiff ref.fa asm/contig.fa
+  546  cd assm
+  547  ls
+  548  cd asm
+  549  ls
+  550  cd ..
+  551  ls
+  552  dnadiff ref.fa asm/contig.fasta
+  553  chmod +wx asm
+  554  dnadiff ref.fa asm/contig.fasta
+  555  ls -a asm
+  556  ls -a 
+  557  man ls
+  558  ls -l 
+  559  ls
+  560  cp asm/contigs.fasta contigs.fasta
+  561  ls
+  562  vim contigs.fasta
+  563  dna diff ref.fa contigs.fasta
+  564  dnadiff ref.fa contigs.fasta
+  565  ls
+  566  vim out.report
+  567  ls
+  568  vim ported_decoder.py
+  569  nucmer ref.fa contigs.fasta
+  570  ls
+  571  vim out.report
+  572  show-coords out.delta
+  573  show-coords out.delta > show-coords.dat
+  574  vim show-coords.dat
+  575  ls
+  576  cd asm
+  577  ls
+  578  contigs.fasta
+  579  vim contigs.fasta
+  580  samtools faidx contigs.fasta | grep NODE_3 > contigs_3.dat
+  581  ls
+  582  vim contigs_3.dat
+  583  vim contigs.fasta.fai
+  584  vim ported_decoder.py
+  585  samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:13853-14566
+  586  samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:13853-14566 > node3_insertion.dat
+  587  vim node3_insertion.dat
+  588  cd ..
+  589  cp asm/node3_insertion.dat message.dat
+  590  ls
+  591  vim message.dat
+  592  history
+  593  ls
+  594  ported_decoder.py message.dat
+  595  python ported_decoder.py message.dat
+  596  python ported_decoder.py --input message.dat
+  597  python ported_decoder.py -d  --input message.dat
+  598  vim message.dat
+  599  python ported_decoder.py -d  --input message.dat
+  600  cp asm/node3_insertion.dat message.dat
+  601  vim message.dat
+  602  python ported_decoder.py -d --input message.dat
+  603  vim ported_decoder.py
+  604  ls
+  605  cd asm
+  606  ls
+  607  mv contigs_3.dat contigs_3_old.dat
+  608  ls
+  609  mv node3_insertion.dat node3_old.dat
+  610  ls
+  611  samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:14566-13853 > node3.dat
+  612  show-coords out.delta
+  613  ls
+  614  vim out.delta
+  615  vim contigs_3_old.dat
+  616  rm contigs_3_old.dat
+  617  ls
+  618  vim tmp
+  619  cd ..
+  620  ls
+  621  vim out.delta
+  622  vim out.delta
+  623  show-coords out.delta
+  624  ls
+  625  vim show-coords.dat
+  626  cd asm
+  627  ls
+  628  cd ..
+  629  ls
+  630  samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:13853-14566 > node3.dat
+  631  vim node3.dat
+  632  vim ported_decoder.py
+  633  vim node3.dat
+  634  python ported_decoder.py -d --input node3.dat
+  635  python ported_decoder.py -d --input --rev_comp node3.dat
+  636  python ported_decoder.py -d --input node3.dat --rev_comp
+  637  samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:13854-14565 > node3.dat
+  638  python ported_decoder.py -d --input node3.dat --rev_comp
+  639  history > history.log
