@@ -1,0 +1,38 @@
+Getting software and data:
+  692  conda create -n lab-week2 python=3 snpeff=4.3 freebayes vcflib vcftools bwa samtools
+  693  conda activate lab-week2
+
+Data:
+  694  wget "http://67.207.142.119/outgoing/BYxRM_subset.tar.xv"
+  696  tar -xzvf BYxRM_subset.tar.xv
+  697  wget "http://hgdownload.soe.ucsc.edu/goldenPath/sacCer3/bigZips/chromFa.tar.gz"
+  698  tar -xzvf chromFA.tar.gz
+  699  cat chr*.fa > sacCer3.fa
+  700  rm chr*.fa
+
+Step 1: Index the sacCer3 genome with bwa index
+  710  bwa index sacCer3.fa
+
+Step 2: Alignment with bwa mem
+  726  vim align.sh
+  748  bash align.sh
+
+Step 3: Create a sorted bam file with samtools
+  752  vim sort.sh
+  753  bash sort.sh
+
+Step 4: Variant calling with freebayes
+  759  freebayes -f sacCer3.fa -p 1 --genotype-qualities *.bam  > var.vcf
+
+Step 5: Filter variants based on genotype quality using vcffilter
+  769  vcffilter -f "QUAL > 20" var.vcf  > filtered_var.vcf
+
+Step 6: Decompose complex haplotypes usign vcfallelicprimitives
+  772  vcfallelicprimitives -k -g filtered_var.vcf > var3.vcf
+
+Step 7: Variant effect prediction with snpeff ann
+  799  snpeff ann -lof R64-1-1.86 var3.vcf > var4.vcf
+
+Step 8: Exploratory data analysis through plotting
+  806  head -n 1000 var4.vcf > var5.vcf
+  809  jupyter-notebook
