@@ -1,8 +1,8 @@
 # Completed quantitative biology labs
-David Wang;
+David Wang
 
-Johns Hopkins Fall 2020;
+Johns Hopkins Fall 2020
 
-Department of Biology;
+Department of Biology
 
-Cell, Molecular, Developmental Biology and Biophysics Program;
+Cell, Molecular, Developmental Biology and Biophysics Program
