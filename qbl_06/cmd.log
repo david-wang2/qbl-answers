@@ -1,0 +1,20 @@
+  485  cp SRR3083926_1.chr6.fastq ER_1.chr6.fastq
+  488  cp SRR3083926_2.chr6.fastq E4_2.chr6.fastq
+  489  cp SRR3083929_1.chr6.fastq E5_1.chr6.fastq
+  490  cp SRR3083929_2.chr6.fastq E5_2.chr6.fastq
+  532  mv ~/Downloads/chr6.fa.gz ./
+  534  gunzip chr6.fa.gz
+  536  mv chr6.fa chr6
+  538  bismark_genome_preparation ~/qbl_06/chr6
+  552  bismark --fastq chr6 -1 E4_1.chr6.fastq -2 E4_2.chr6.fastq
+  553  bismark --fastq chr6 -1 E5_1.chr6.fastq -2 E5_2.chr6.fastq
+  558  samtools sort E4_1.chr6_bismark_bt2_pe.bam > E4_sorted.bam
+  559  samtools sort E5_1.chr6_bismark_bt2_pe.bam > E5_sorted.bam
+  563  samtools index E4_sorted.bam
+  565  samtools index E5_sorted.bam
+  566  bismark_methylation_extractor --bedgraph --comprehensive E4_sorted.bam
+  567  bismark_methylation_extractor --bedgraph --comprehensive E5_sorted.bam
+  584  IGV sorted E4_sorted.bedGraph.gz E5_sorted.bedGraph.gz
+------------- On another terminal -----------------------------------------
+  504  gunzip E4_sorted.bedGraph
+  509  gunzip E5_sorted.bedGraph
