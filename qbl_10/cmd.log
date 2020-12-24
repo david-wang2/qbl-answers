@@ -1,0 +1,16 @@
+bwa index assembly.fasta
+bwa mem assembly.fasta READS/SRR492183_1.fastq SRR492183_2.fastq > day1.sam
+bwa mem assembly.fasta READS/SRR492186_1.fastq SRR492186_2.fastq > day2.sam
+bwa mem assembly.fasta READS/SRR492188_1.fastq SRR492188_2.fastq > day3.sam
+bwa mem assembly.fasta READS/SRR492189_1.fastq SRR492189_2.fastq > day4.sam
+bwa mem assembly.fasta READS/SRR492190_1.fastq SRR492190_2.fastq > day5.sam
+bwa mem assembly.fasta READS/SRR492193_1.fastq SRR492193_2.fastq > day6.sam
+bwa mem assembly.fasta READS/SRR492194_1.fastq SRR492194_2.fastq > day7.sam
+bwa mem assembly.fasta READS/SRR492197_1.fastq SRR492197_2.fastq > day8.sam
+
+# script to make bam files
+vim script.bash
+./script.bash
+jgi_summarize_bam_contig_depths --outputDepth depth.dat *.bam
+metabat -i assembly.fasta -a depth.dat -o bins_dir/bin
+
