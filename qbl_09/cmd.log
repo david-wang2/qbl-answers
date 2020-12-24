@@ -1,0 +1,11 @@
+# Loading the data
+hifive fends output1 --binned 100000 -L genome/mm9.len
+hifive hic-data -X data/WT_100kb/raw_\*.mat output1 output2.dat
+hifive hic-project -f 25 -n 25 -j 100000 output2.dat filtered_1.dat
+hifive hic-normalize express filtered_1.dat
+
+# Splitting genes into two groups
+grep - hic_comp.bed > comp_negative.bed
+grep -v - hic_comp.bed > comp_positive.bed
+bedtools intersect -a data/WT_fpkm.bed -b comp_negative.bed -wb > comp_negative_genes.bed
+bedtools intersect -a data/WT_fpkm.bed -b comp_positive.bed -wb > comp_positive_genes.bed
